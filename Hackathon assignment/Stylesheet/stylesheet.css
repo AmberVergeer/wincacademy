@@ -1,0 +1,142 @@
+body{
+    display:grid;
+    grid-template-columns: 50px 1fr 1fr 50px;
+    grid-template-rows:50px 100px repeat(3,1fr) 50px;
+    background-color: #F8F5F1;
+    font-family: 'Berkshire Swash', sans-serif;
+}
+header{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    font-size: 50px;
+    font-weight: 200;
+    text-align: center;
+    background-color:#F8F5F1;;
+}
+main{
+    grid-column: 2/4;
+    grid-row: 3/6;
+    background-color:#F8F5F1;;
+}
+.menu{
+    width: auto;
+    margin: auto;
+    padding: 20px 0px;
+    display: flex;
+    justify-content:center;
+}
+.home{
+    padding:5px;
+    margin: 5px;
+    color:black
+}
+.about{
+    padding:5px;
+    margin: 5px;
+    color:black;
+}
+.contact{
+    padding:5px;
+    margin: 5px;
+    color:black;
+}
+p{
+    margin: auto;
+}
+figure{
+    display: flex;
+    justify-content:center;
+    margin: auto;
+}
+.bus{
+    width: 90%;
+    border:3px solid black;
+}
+.staff{
+    width: 98%;
+    height: 100%;
+    border:3px solid black;
+    margin:auto;
+}
+.staff-2{
+    width: 98%;
+    height: 100%;
+    border:3px solid black;
+    margin:auto;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+footer{
+    grid-column: 2/4;
+    grid-row: 6/7;
+    display: flex;
+    justify-content: center;
+    background-color:  #F8F5F1;;
+}
+
+@media (max-width:650px){
+    body{
+        grid-template-columns: 25px 1fr 1fr 25px;
+        grid-template-rows: 50px 50px repeat(3,1fr) 50px;
+     }
+    header{
+        font-size:40px;
+    }
+    .bus{
+        width:98%;
+    }
+    .staff{
+        width:98%;
+        height:100%;
+    }
+    .staff-2{
+        width:98%;
+        height:100%;
+    }
+}
+
+@media (min-width:650px){
+    form{
+        padding:0px 50px;
+    }
+    p{
+        padding:0px 50px
+    }
+}
+
+@media (min-width: 1024px){
+    header{
+        font-size: 70px;
+    }
+    p{
+        font-size: 20px;
+        padding:0px 200px
+    }
+    form{
+        padding: 0px 200px;
+    }
+    .bus{
+        width:80%;
+    }
+    .staff{
+        width: 80%;
+        height:100%;
+    }
+    .staff-2{
+        width:80%;
+        height:100%;
+    }
+    .home{
+        font-size:20px;
+    }
+    .about{
+        font-size:20px;
+    }
+    .contact{
+        font-size:20px;
+    }
+}
+
